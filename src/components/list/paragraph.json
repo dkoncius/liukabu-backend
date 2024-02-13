@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_paragraph_paragraphs",
+  "info": {
+    "displayName": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "listItem": {
+      "type": "text"
+    }
+  }
+}
