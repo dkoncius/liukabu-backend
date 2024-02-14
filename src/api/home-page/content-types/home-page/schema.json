@@ -29,13 +29,36 @@
       "repeatable": true,
       "component": "list.paragraph"
     },
-    "banners": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::banner.banner"
-    },
     "paragraph": {
       "type": "text"
+    },
+    "youtubeLink": {
+      "type": "string"
+    },
+    "galleryImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "emailParagraph": {
+      "type": "text"
+    },
+    "emailInput": {
+      "type": "string"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.social-links"
+    },
+    "emailButton": {
+      "type": "string"
     }
   }
 }

@@ -787,6 +787,7 @@ export interface ApiBannerBanner extends Schema.CollectionType {
     singularName: 'banner';
     pluralName: 'banners';
     displayName: 'banner';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -794,8 +795,8 @@ export interface ApiBannerBanner extends Schema.CollectionType {
   attributes: {
     image: Attribute.Media;
     button: Attribute.String;
-    url: Attribute.String;
-    sold: Attribute.Boolean;
+    href: Attribute.String;
+    alt: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -828,12 +829,13 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   attributes: {
     cover: Attribute.Media;
     list: Attribute.Component<'list.paragraph', true>;
-    banners: Attribute.Relation<
-      'api::home-page.home-page',
-      'oneToMany',
-      'api::banner.banner'
-    >;
     paragraph: Attribute.Text;
+    youtubeLink: Attribute.String;
+    galleryImages: Attribute.Media;
+    emailParagraph: Attribute.Text;
+    emailInput: Attribute.String;
+    socialLinks: Attribute.Component<'links.social-links'>;
+    emailButton: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
