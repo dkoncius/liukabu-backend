@@ -2,6 +2,7 @@
   "kind": "collectionType",
   "collectionName": "banners",
   "info": {
+    
     "singularName": "banner",
     "pluralName": "banners",
     "displayName": "banner",
