@@ -12,17 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "desktop_cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "list": {
       "displayName": "paragraph",
       "type": "component",
@@ -61,6 +50,17 @@
       "type": "string"
     },
     "mobile_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desktop_cover": {
       "allowedTypes": [
         "images",
         "files",
