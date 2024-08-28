@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "cover": {
+    "desktop_cover": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -59,6 +59,16 @@
     },
     "emailButton": {
       "type": "string"
+    },
+    "mobile_cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

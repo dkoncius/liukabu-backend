@@ -827,7 +827,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    cover: Attribute.Media;
+    desktop_cover: Attribute.Media;
     list: Attribute.Component<'list.paragraph', true>;
     paragraph: Attribute.Text;
     youtubeLink: Attribute.String;
@@ -836,6 +836,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     emailInput: Attribute.String;
     socialLinks: Attribute.Component<'links.social-links'>;
     emailButton: Attribute.String;
+    mobile_cover: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
